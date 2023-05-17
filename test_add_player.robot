@@ -32,7 +32,6 @@ ${NEW PLAYER}       xpath=//span[text()= 'Johna Smith']
 ${LOGO}     xpath=//*[@title='Logo Scouts Panel']
 *** Test Cases ***
 Login to the system
-    set selenium implicit wait    10seconds
     Open login page
     Type in email
     Type in password

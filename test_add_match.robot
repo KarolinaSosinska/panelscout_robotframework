@@ -30,7 +30,6 @@ ${LAST CREATED MATCH HEADER}      xpath=//*[text()='Last created match']
 
 *** Test Cases ***
 Add match
-    set selenium implicit wait    10seconds
     Open login page
     Type in email
     Type in password

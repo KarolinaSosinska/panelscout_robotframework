@@ -2,7 +2,7 @@
 Library     SeleniumLibrary
 Documentation       Suite description #automated tests for scout website
 *** Variables ***
-${LOGIN URL}    https://scouts-test.futbolkolektyw.pl/en
+${LOGIN URL}   https://scouts.futbolkolektyw.pl/en/
 ${BROWSER}      Chrome
 ${LOGIN INPUT}      xpath =//div[1]/div/input
 ${PASSWORD INPUT}       xpath =//form/div/div[1]/div[2]/div/input
@@ -52,11 +52,11 @@ Click on clear button
 Click on main page button
     Click Element       xpath =//ul[1]/div[1]
 Click on last updated player
-    Wait Until Location Is Not      https://scouts-test.futbolkolektyw.pl/en
+    Wait Until Location Is Not      https://scouts.futbolkolektyw.pl/en/
     Wait until element is visible    ${LAST UPDATED PLAYER HEADER}
     Click Element    xpath=//a[2]/button
 Assert updated player
-    Wait Until Location Is Not    https://scouts-test.futbolkolektyw.pl/en/players/6026b48956c79737b3f3c624/edit
+    Wait Until Location Is Not    https://scouts.futbolkolektyw.pl/en/players/6026b48956c79737b3f3c624/edit
     Wait Until Element Is Visible       ${EMAIL LABEL}
     Title should be    Edit player Brzęczyszcykiewić Zażółć Gęślą Jaźń
     Capture Page Screenshot     alert.png
